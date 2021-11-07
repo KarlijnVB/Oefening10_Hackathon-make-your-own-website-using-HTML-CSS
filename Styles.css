@@ -1,0 +1,104 @@
+header{ /* Verschillende afstanden voor margin, gelijk voor links en rechts*/
+    text-align: center;
+    padding: 30px;
+    border: 4px solid rgb(5, 88, 37);
+    margin: 30px 60px 60px;
+    color: #f6693e;
+}
+h1{ /*gebruik van google fonts*/
+    font-family: "Sofia", sans-serif;
+}
+body{ /*4 Verschillende afstanden voor margin*/
+    color: rgb(4, 112, 107);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    padding: 10px;
+    border: 2px solid rgb(5, 88, 37);
+    margin: 10px 30px 32px 40px ;
+}
+main{
+    padding: 10px;
+    border:2px solid #a44d38;
+    margin: 10px 10px 30px;
+}
+.middengroen{ /*uitlijnen in het midden--*/
+    margin: 0 auto;
+    width: 200px;
+    border: 3px solid rgb(5, 88, 37);
+    line-height: 200%;
+}
+img{ /*padding bij plaatje*/
+   	padding: 4px; 
+    background-color: #fcfcfc;
+    border: 1px solid #999;
+    margin: auto;
+}
+figcaption{ /*text onder plaatje schuin*/
+    font-style:italic;
+}
+.quote{ /*shorthand notatie van margin*/
+    font-style: italic;    
+    color: rgb(94, 93, 93);
+    padding-left: 1em;
+    border-left: 2px solid #999;
+    margin: 20px 10px;
+}
+/* werkt met floating list items */
+nav ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    background-color: #a44d38;
+    width: 30%;
+    border: 2px solid rgb(8, 73, 5);
+     }
+
+nav ul li a{ /*text niet onderstreept en niet blauw wanneer bezocht*/
+    text-decoration: none;
+    color: black;
+    }
+
+nav ul li a:hover{ /*andere kleur bij hover over navigatielink */
+    font-weight: bold;
+    color: darkblue;
+}
+
+.active{ /*actieve pagina heeft een ander kleurtje*/
+    color: #999;
+}
+
+form input{/* ieder item onder elkaar plaatsen - input */
+        display: block;
+}
+form textarea{ /* ieder item onder elkaar plaatsen - textarea */
+    display: block;
+}
+
+@media (min-width: 1024px){ /*aanpassingen bij kleine schermen*/
+   body{ 
+       background-color: #f9dca5;
+       color: black;
+       line-height: 1.5em;
+}
+}
+
+hr{ /*andere kleur van de lijn*/
+    height: 1px;
+    background-color: #a44d38;
+    border: none;
+}
+.iframe-container{/*video ook op kleine device goed te zien */
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+.iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
